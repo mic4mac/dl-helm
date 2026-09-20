@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/michaelochristensen/dl-helm.git
+    repoURL: https://github.com/mic4mac/dl-helm.git
     targetRevision: main
     path: .
   destination:
