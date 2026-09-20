@@ -1,0 +1,29 @@
+puid: 1000
+pgid: 1000
+timezone: Etc/UTC
+
+storage:
+  # Talos UserVolumeConfig "dl-data" mounted here on the node
+  hostPath: /var/mnt/dl-data
+  nodeName: talos-byh-le9
+  size: 250Gi
+  storageClassName: local-storage
+
+qbittorrent:
+  image:
+    repository: lscr.io/linuxserver/qbittorrent
+    tag: latest
+  webuiPort: 8080
+  torrentPort: 6881
+
+plex:
+  image:
+    repository: lscr.io/linuxserver/plex
+    tag: latest
+  port: 32400
+
+samba:
+  image:
+    repository: dperson/samba
+    tag: latest
+  shareName: downloads
